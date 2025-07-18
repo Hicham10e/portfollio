@@ -1,27 +1,16 @@
-import React from 'react'
-import Img from '../assets/kevinRushProfile.png'
-import {HERO_CONTENT} from '../constants'
-import { motion } from "framer-motion"
+import React from 'react';
 
 const Hero = () => {
   return (
-    <>
-    <div className='flex justify-center mt-10 gap-4 items-center w-full  flex-wrap border-b border-neutral-800 pb-24 lg:flex lg:justify-between ml-6 ' >
-    <div className='text-gray-400 w-1/2 flex flex-col gap-4 mb-5 ml-5 relative top-0 left-5 '>
-      <motion.h1 transition={{duration:1 , delay:1}}  animate={{ x: 50 }} className=' text-4xl font-light'> Heffaf Mohamed Hicham </motion.h1>
-      <motion.span   whileHover={{ scale: 1.2 }}
-  whileTap={{ scale: 1.1 }}
-  drag="x"
-  dragConstraints={{ left: 0, right: 100 }}
-  className='bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-3xl tracking-tight text-transparent '>Frontend Developer</motion.span>
-<p>{HERO_CONTENT}</p>
-      </div>
-      <div className='relative top-[20px] md:relative lg:right-20 lg:ml-8 '>
-        <motion.img transition={{duration:1 , delay:1}}  animate={{ x: -50 }} className='object-cover h-[350px] w-[350px] mb-10 lg:h-[450px] lg:w-[450px]' src={Img} />
-      </div>
-    </div>
-    </>
-  )
-}
+    <section id="hero" className="flex flex-col items-center justify-center py-20 px-4 max-w-3xl mx-auto border-b border-neutral-200 dark:border-neutral-800 text-center">
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">Heffaf Mohamed Hicham</h1>
+      <h2 className="text-2xl md:text-3xl font-semibold text-purple-600 dark:text-purple-400 mb-4">Junior Front-End Developer</h2>
+      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-xl mb-4">
+        I am a passionate junior front-end developer skilled in HTML, CSS, JavaScript, React, TailwindCSS, Bootstrap, Git, and Figma. I love building beautiful, responsive web experiences and am always eager to learn and grow in the world of web development.
+      </p>
+      <a href="/src/assets/h.pdf" download className="inline-block bg-purple-600 text-white px-6 py-3 rounded shadow hover:bg-purple-700 transition-colors font-semibold w-max">Download CV</a>
+    </section>
+  );
+};
 
-export default Hero
+export default Hero;

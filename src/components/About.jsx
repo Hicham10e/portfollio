@@ -1,22 +1,14 @@
-import React from 'react'
-import { ABOUT_TEXT } from '../constants'
-import img from '../assets/about.jpg'
+import React from 'react';
+
 function About() {
   return (
-    <>
-    <div>
-    <h1 className='text-gray-400 mt-8 border-spacing-1 text-3xl font-semibold text-center mb-8 '>About <span className='text-gray-600'>Me</span> </h1>
-</div>
-    <div className='text-gray-400 flex justify-between relative left-16 flex-col gap-2 w-[80%] mt-28 mb-12 pb-24 md:flex-row '>
-      <div className='w-[60%] relative left-8 flex-wrap md:w-[40%]'>
-      <img src={img} className='object-cover rounded-lg relative left-28 w-[300px]  md:relative md:left-28 '/>
-      </div>
-      <div className='w-[60%]  relative left-8 md:w-[40%] '>
-       <p className='relative left-28 md:left-0 '>{ABOUT_TEXT}</p>
-      </div>
-    </div>
-    </>
-  )
+    <section id="about" className="py-16 px-4 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">About Me</h2>
+      <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-6">
+        Hi! I'm Heffaf Mohamed Hicham, a junior front-end developer with a strong passion for creating interactive and visually appealing web applications. I hold a Bachelor's degree in Computer Science and a Master's degree in Artificial Intelligence. My journey in tech has equipped me with a solid foundation in both theory and practice, and I'm excited to contribute to innovative projects and teams.
+      </p>
+    </section>
+  );
 }
 
-export default About
+export default About;

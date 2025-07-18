@@ -1,32 +1,30 @@
-import React from 'react'
+import React from 'react';
 
-function Experience() {
-  return (
-    <>
-    <div className='my-16'>
-      <h1 className='text-3xl text-gray-400 text-center font-semibold relative right-28'>Experience</h1>
+const Experience = () => (
+  <section id="experience" className="py-12 px-2 sm:px-4 max-w-3xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">Experience</h2>
+    <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-4 sm:p-8 flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4">
+        <div className="md:w-1/3 text-purple-600 dark:text-purple-400 font-semibold text-base sm:text-lg">Feb 2023 - May 2023</div>
+        <div className="md:w-2/3">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-1">Internship - Front-End Developer</h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base">Algérie Telecom</p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base">
+            <li>Created user interfaces for an internal web application</li>
+            <li>Integrated graphic designs and implemented interactive features</li>
+            <li>Optimized performance and conducted cross-browser compatibility testing</li>
+          </ul>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <span className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">HTML</span>
+            <span className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">CSS</span>
+            <span className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">JavaScript</span>
+            <span className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">Bootstrap</span>
+            <span className="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">React.js</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className=' text-gray-400  flex gap-9 relative left-20 md:left-28 w-[80%] borde-b border-neutral-700'>
-        <div className='w-[30%]'>
-            <p className='ml-10 text-gray-600'>February,2023 - May,2023</p>
-        </div>
-        <div className='w-[50%]'>
-        <h2 className='font-bold text-gray-100'>Internship - Front-End Developer - Algérie Telecom (2023)</h2>
-        <p>
-Created user interfaces for an internal web application
-Integrated graphic designs and implemented interactive features
-Optimized performance and conducted cross-browser compatibility testing</p>
-        <div className='my-6 flex gap-5'>
-        <a className=' text-purple-600 bg-neutral-900 px-4 rounded-sm cursor-pointer hover:shadow-xl hover:shadow-neutral-800 ' >Html</a>
-        <a className='text-purple-600 bg-neutral-900 px-4 rounded-sm cursor-pointer hover:shadow-xl hover:shadow-neutral-800 '>Css</a>
-        <a className='text-purple-600 bg-neutral-900 px-4 rounded-sm cursor-pointer hover:shadow-xl hover:shadow-neutral-800 '>JavaScript</a>
-        <a className='text-purple-600 bg-neutral-900 px-4 rounded-sm cursor-pointer hover:shadow-xl hover:shadow-neutral-800 '>Bootstrap</a>
-        <a className='text-purple-600 bg-neutral-900 px-4 rounded-sm cursor-pointer hover:shadow-xl hover:shadow-neutral-800 '>React.js</a>
-        </div>
-        </div>
-    </div>
-    </>
-  )
-}
+  </section>
+);
 
-export default Experience
+export default Experience;
